@@ -3,6 +3,7 @@
 :root{
     --azul-escuro: #0D192C;
     --azul-escuro-secundario: #15263F;
+    --azul-escuro-borda: #2E405A;
     --branco: #ffffff;
     --azul-claro: #8BACD9;
     --ciano: #00FFF8;
@@ -19,6 +20,7 @@ body{
     background: var(--azul-escuro-secundario);
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
     border-radius: 15px;
+    padding-inline: 1.5em;
 }
 
 .nft-info{
@@ -28,26 +30,24 @@ body{
 }
 
 .produto{
-    padding: 1.5em;
+    padding-block: 1.5em;
 }
 
 .nft-info__titulo{
     font-weight: 600;
     color: var(--branco);
     font-size: 1.5em;
-    padding: 0 1.1em;
 }
 
 .nft-info__texto{
     color: var(--azul-claro);
     font-size: 1.2em;
-    padding: .7em 3em 1em 1.3em;
+    padding: .7em 3em 1em 0;
 }
 
 .container-info{
     display: flex;
-    gap: 5.5em;
-    padding-left: 1.8em;
+    gap: 7.5em;
     padding-bottom: 2em;
 }
 
@@ -70,5 +70,21 @@ body{
 .time::before{
     content: url('../imagens/Clock.svg');
     padding-right: .4em;
+}
+
+.creator-info{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+    border-top: 1px solid var(--azul-escuro-borda);
+}
+
+.creator-info h3{
+    color: var(--azul-claro)
+}
+
+.name-creator{
+    color: var(--branco);
 }
 
