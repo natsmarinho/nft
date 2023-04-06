@@ -92,6 +92,10 @@ body{
     .container{
         margin: 10em 30em;
     }
+
+    .nft-info__titulo:hover, .name-creator:hover{
+        color: var(--ciano)
+    }
 }
 
 @media screen and (min-width: 1400px){
